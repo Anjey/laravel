@@ -7,7 +7,8 @@ services:
         volumes:
                 - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
         ports:
-                    - 8080:80
+                    - 8081:80
+                     
         working_dir: ${APP_PATH_CONTAINER}
     db:
         image: mariadb
